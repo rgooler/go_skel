@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it example-scratch
+docker run -it rgooler/go_skel
