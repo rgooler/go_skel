@@ -5,8 +5,12 @@ language: golang
 services:
   - docker
 
+addons:
+  packages:
+    - docker-ce
+
 before_install:
   - docker build -t rgooler/go_skel .
 
 script:
- - bash run.sh
+ - docker run -it rgooler/go_skel
